@@ -1,0 +1,40 @@
+.add {
+  padding-top: 5rem;
+}
+
+.add__img {
+  width: 70vw;
+  height: 20.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.add__form {
+}
+
+.add__formGroup {
+}
+
+.add__fileIcon {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.add__input {
+  font-size: 2rem;
+  border: none;
+  padding: 2rem;
+  width: 70vw;
+}
+.add__input:focus {
+  outline: none;
+}
+
+.add__text {
+  font-size: 1.5rem;
+}

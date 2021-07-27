@@ -1,0 +1,100 @@
+.single {
+  max-width: 80%;
+  margin-left: 10%;
+}
+.single__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single__postContainer {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.single__postImage {
+  width: 80vw;
+  height: 20.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  /* margin-left: 3rem; */
+}
+
+.single__title {
+  text-align: center;
+  margin: 1rem;
+  font-family: sans-serif;
+  font-size: 2.8rem;
+}
+
+.single__titleInput {
+  margin: 1rem;
+  font-family: sans-serif;
+  font-size: 2.8rem;
+  color: gray;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.single__titleInput:focus {
+  outline: none;
+}
+
+.single__edit {
+  float: right;
+  font-size: 1.6rem;
+}
+
+.single__icon {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.single__icon:first-child {
+  color: teal;
+}
+.single__icon:last-child {
+  color: tomato;
+}
+
+.single__info {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.single__desc {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.single__desc::first-letter {
+  margin-left: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.single__descInput {
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.single__descInput:focus {
+  outline: none;
+  color: gray;
+}
+
+.singlePostButton {
+  width: 10rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3d5a5f;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 2rem;
+}
