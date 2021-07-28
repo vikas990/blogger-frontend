@@ -42,13 +42,13 @@ function Post({ posts }) {
                 )}
                 <CardContent>
                   <Typography variant="h4">
-                    {isTurncated && p.title.slice(0, 10)}
+                    {isTurncated && p.title.slice(0, 10) + "..."}
                   </Typography>
                   <Typography>
                     Published - {new Date(p.createdAt).toDateString()}
                   </Typography>
                   <Typography variant="subtitle1">
-                    {isTurncated && p.desc.slice(0, 50)}
+                    {isTurncated && p.desc.slice(0, 50) + "...."}
                   </Typography>
                 </CardContent>
               </CardActionArea>
