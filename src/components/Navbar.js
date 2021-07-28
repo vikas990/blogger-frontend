@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/">
-          Bloggers
+          Blogging Corner
         </a>
         <button
           className="navbar-toggler"
@@ -52,12 +52,15 @@ const Navbar = () => {
                 </NavLink>
               </li>
             )}
-
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/registration">
-                Registration
-              </NavLink>
-            </li>
+            {user ? (
+              <li></li>
+            ) : (
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/registration">
+                  Registration
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
       </nav>

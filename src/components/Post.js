@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import {
   Grid,
   Container,
@@ -25,12 +25,13 @@ const useStyles = makeStyles((theme) => ({
 function Post({ posts }) {
   const PF = "https://blogger1-vikas.herokuapp.com/images/";
   const classes = useStyles();
+  const [isTurncated, setIsturncated] = useState(true);
   return (
     <Container className={classes.root}>
       <Grid container spacing={4}>
         {posts.map((p) => (
           <Grid item sm={3}>
-            <Card>
+            <Card style={{ height: "50vh" }}>
               <CardActionArea>
                 {p.photo && (
                   <CardMedia
@@ -40,11 +41,15 @@ function Post({ posts }) {
                   />
                 )}
                 <CardContent>
-                  <Typography variant="h4">{p.title}</Typography>
+                  <Typography variant="h4">
+                    {isTurncated && p.title.slice(0, 10)}
+                  </Typography>
                   <Typography>
                     Published - {new Date(p.createdAt).toDateString()}
                   </Typography>
-                  <Typography variant="subtitle1">{p.desc}</Typography>
+                  <Typography variant="subtitle1">
+                    {isTurncated && p.desc.slice(0, 50)}
+                  </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions

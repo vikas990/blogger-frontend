@@ -53,7 +53,7 @@ function SinglePost() {
   return (
     <div className="single">
       <div className="single__header">
-        <h1>MyWays Blogs</h1>
+        <h1>Blog</h1>
         <button style={{ backgroundColor: "transparent", border: "none" }}>
           <Link to="/">Go Back</Link>
         </button>
